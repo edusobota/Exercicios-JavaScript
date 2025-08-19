@@ -1,0 +1,4 @@
+Exercícios de Lógica Condicional
+Esta seção do repositório é dedicada a projetos que aplicam a lógica condicional em JavaScript. Os exercícios aqui utilizam estruturas de decisão como if, else if, else e switch/case para controlar o fluxo de execução do programa.
+
+O objetivo é resolver problemas criando diferentes caminhos que o código pode seguir com base em entradas do usuário ou condições pré-definidas.
