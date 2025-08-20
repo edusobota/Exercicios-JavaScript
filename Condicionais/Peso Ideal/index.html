@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let sexo = prompt("Digite seu sexo (H para homem, M para mulher)")
+        let pesoAtual = Number(prompt("Digite seu peso"))
+        let altura = Number(prompt("Digite sua altura em metros"))
+
+        let pesoIdeal = calcularPesoIdeal(sexo, altura)
+
+        document.write(
+            `Sexo: ${sexo}<br>` +
+            `Peso atual: ${pesoAtual}<br>` +
+            `Altura: ${altura}<br>` +
+            `Peso ideal: ${pesoIdeal.toFixed(2)}`
+        )
+    </script>
+</body>
+</html>
