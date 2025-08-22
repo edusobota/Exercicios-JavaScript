@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menor Número</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let numero1 = Number(prompt("Digite o primeiro número"))
+        let numero2 = Number(prompt("Digite o segundo número"))
+
+        let validacao = validarNumeros(numero1, numero2)
+
+        if (validacao !== null) {
+            let menor = menorNumero(validacao[0], validacao[1])
+            document.write(`O menor número é: ${menor}`)
+        }
+    </script>
+</body>
+</html>
