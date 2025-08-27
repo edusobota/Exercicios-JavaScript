@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Pagamento</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let preco = Number(prompt("Informe o valor do produto:"));
+
+        let formaPagamento = Number(prompt(
+            `Escolha a forma de pagamento:
+            1 - À vista em dinheiro ou cheque (10% de desconto)
+            2 - À vista no cartão (15% de desconto)
+            3 - Parcelado em 2x sem juros
+            4 - Parcelado em 2x com 10% de juros`
+        ));
+
+        let resultado = calcularPagamento(preco, formaPagamento);
+        document.write(resultado);
+    </script>
+</body>
+</html>
