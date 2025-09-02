@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Salas para Concurso</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let totalCandidatos = Number(prompt("Digite a quantidade de candidatos:"));
+        let capacidadeSala = Number(prompt("Digite a capacidade máxima por sala:"));
+
+        let totalSalas = calcularSalas(totalCandidatos, capacidadeSala);
+
+        document.write(`
+            Candidatos inscritos: ${totalCandidatos}<br>
+            Capacidade por sala: ${capacidadeSala}<br>
+            Número de salas necessárias: ${totalSalas}
+        `);
+    </script>
+</body>
+</html>
