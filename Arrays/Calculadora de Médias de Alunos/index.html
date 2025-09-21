@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias de Alunos</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        document.write(`<h3>Aluno 1</h3>`);
+        let aluno1 = preencherNotas(5);
+        let media1 = calcularMedia(aluno1);
+        exibirNotas(aluno1);
+        document.write(`Média: ${media1.toFixed(1)}<br>`);
+        verificarSituacao(media1);
+
+        document.write(`<h3>Aluno 2</h3>`);
+        let aluno2 = preencherNotas(5);
+        let media2 = calcularMedia(aluno2);
+        exibirNotas(aluno2);
+        document.write(`Média: ${media2.toFixed(1)}<br>`);
+        verificarSituacao(media2);
+
+        document.write(`<h3>Aluno 3</h3>`);
+        let aluno3 = preencherNotas(5);
+        let media3 = calcularMedia(aluno3);
+        exibirNotas(aluno3);
+        document.write(`Média: ${media3.toFixed(1)}<br>`);
+        verificarSituacao(media3);
+
+        document.write(`<h3>Aluno 4</h3>`);
+        let aluno4 = preencherNotas(5);
+        let media4 = calcularMedia(aluno4);
+        exibirNotas(aluno4);
+        document.write(`Média: ${media4.toFixed(1)}<br>`);
+        verificarSituacao(media4);
+
+        document.write(`<h3>Aluno 5</h3>`);
+        let aluno5 = preencherNotas(5);
+        let media5 = calcularMedia(aluno5);
+        exibirNotas(aluno5);
+        document.write(`Média: ${media5.toFixed(1)}<br>`);
+        verificarSituacao(media5);
+    </script>
+</body>
+</html>
