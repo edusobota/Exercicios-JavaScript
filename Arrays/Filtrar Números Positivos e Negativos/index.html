@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar Números</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        document.write(`<h3>Vetor Original</h3>`);
+        let vetorOriginal = preencherVetor(8);
+        exibirVetor(vetorOriginal);
+
+        document.write(`<br><h3>Valores Positivos</h3>`);
+        let vetorPositivos = filtrarPositivos(vetorOriginal);
+        exibirVetor(vetorPositivos);
+
+        document.write(`<br><h3>Valores Negativos</h3>`);
+        let vetorNegativos = filtrarNegativos(vetorOriginal);
+        exibirVetor(vetorNegativos);
+    </script>
+</body>
+</html>
