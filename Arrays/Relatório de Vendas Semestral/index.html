@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Vendas Semestral</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let vendasProduto1 = lerVendasProduto(1);
+        let vendasProduto2 = lerVendasProduto(2);
+        let vendasProduto3 = lerVendasProduto(3);
+
+        let totalSemestre1 = calcularTotalSemestre(vendasProduto1);
+        let totalSemestre2 = calcularTotalSemestre(vendasProduto2);
+        let totalSemestre3 = calcularTotalSemestre(vendasProduto3);
+
+        let piorMes1 = encontrarPiorMes(vendasProduto1);
+        let piorMes2 = encontrarPiorMes(vendasProduto2);
+        let piorMes3 = encontrarPiorMes(vendasProduto3);
+        
+        let totalVendasMensal = calcularVendasMensais(vendasProduto1, vendasProduto2, vendasProduto3);
+
+        document.write(`<h3>Produto 1</h3>`);
+        exibirVendasProduto(vendasProduto1);
+        document.write(`<b>Total no semestre:</b> R$ ${totalSemestre1.toFixed(2)}<br>`);
+        document.write(`<b>Pior mês de venda foi o mês:</b> ${piorMes1}<br>`);
+
+        document.write(`<br><h3>Produto 2</h3>`);
+        exibirVendasProduto(vendasProduto2);
+        document.write(`<b>Total no semestre:</b> R$ ${totalSemestre2.toFixed(2)}<br>`);
+        document.write(`<b>Pior mês de venda foi o mês:</b> ${piorMes2}<br>`);
+
+        document.write(`<br><h3>Produto 3</h3>`);
+        exibirVendasProduto(vendasProduto3);
+        document.write(`<b>Total no semestre:</b> R$ ${totalSemestre3.toFixed(2)}<br>`);
+        document.write(`<b>Pior mês de venda foi o mês:</b> ${piorMes3}<br>`);
+
+        document.write(`<br><h3>Total de Vendas da Empresa por Mês</h3>`);
+        exibirVendasMensais(totalVendasMensal);
+    </script>
+</body>
+</html>
