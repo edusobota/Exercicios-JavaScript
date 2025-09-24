@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Elementos do Vetor</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let tamanho = Number(prompt(`Digite o tamanho do vetor!`));
+        let vetor = preencherVetor(tamanho);
+        
+        exibirVetor(vetor);
+        
+        let somaTotal = somaVet(vetor);
+        document.write(`<br>Soma de todos os elementos (${tamanho}):<br>${somaTotal}`);
+    </script>
+</body>
+</html>
