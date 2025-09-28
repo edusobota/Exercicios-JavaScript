@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferença Entre Matrizes</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        alert(`Preencha a Matriz 1`);
+        let matriz1 = preencherMatriz();
+        document.write(`<h3>Matriz 1</h3>`);
+        exibirMatriz(matriz1);
+
+        alert(`Preencha a Matriz 2`);
+        let matriz2 = preencherMatriz();
+        document.write(`<br><h3>Matriz 2</h3>`);
+        exibirMatriz(matriz2);
+
+        let matrizDiferenca = calcularDiferenca(matriz1, matriz2);
+        document.write(`<br><h3>Diferença entre as matrizes (Matriz 1 - Matriz 2)</h3>`);
+        exibirMatriz(matrizDiferenca);
+    </script>
+</body>
+</html>
