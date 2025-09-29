@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar por Soma de Índices</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let matriz = preencherMatriz();
+        exibirMatriz(matriz);
+
+        let [linhas, colunas, numeros, quantidade] = filtrarPorSomaParDeIndices(matriz);
+
+        document.write(`<b>Valores onde a soma da linha + coluna é par:</b><br>`);
+        exibirElementosFiltrados(linhas, colunas, numeros, quantidade);
+    </script>
+</body>
+</html>
