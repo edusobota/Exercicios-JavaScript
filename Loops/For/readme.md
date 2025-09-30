@@ -12,7 +12,7 @@ Os exercícios incluem situações práticas como:
 - Somas de sequências e múltiplos de números.  
 - Geração de sequências como a de Fibonacci.  
 - Criação de tabuadas de multiplicação.  
-- Uso de laços como `for` e `while` para automatizar tarefas.  
+- Uso de laços como `for`, `while` e `do...while` para automatizar tarefas.  
 
 ## Objetivo
 Este repositório serve como um registro de aprendizado e prática com **estruturas de repetição em JavaScript**.
