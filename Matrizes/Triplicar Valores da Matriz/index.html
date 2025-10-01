@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triplicar Matriz</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        document.write(`<h3>Matriz Original</h3>`);
+        let matrizOriginal = preencherMatriz();
+        exibirMatriz(matrizOriginal);
+
+        let matrizTriplicada = triplicarMatriz(matrizOriginal);
+
+        document.write(`<h3>Matriz com valores triplicados</h3>`);
+        exibirMatriz(matrizTriplicada);
+    </script>
+</body>
+</html>
