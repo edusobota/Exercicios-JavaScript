@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar Ímpares na Matriz</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let matriz = preencherMatriz();
+        exibirMatriz(matriz);
+
+        let [linhas, colunas, numeros, quantidade] = encontrarImpares(matriz);
+
+        document.write(`<b>Números ímpares e suas posições:</b><br>`);
+        exibirImpares(linhas, colunas, numeros, quantidade);
+
+        let soma = somaImpares(numeros, quantidade);
+        document.write(`<br><b>Soma dos ímpares:</b> ${soma}`);
+    </script>
+</body>
+</html>
