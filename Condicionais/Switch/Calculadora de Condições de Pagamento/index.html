@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições de Pagamento</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let valorCompra = Number(prompt(`Digite o valor da compra:`));
+        let opcaoPagamento = prompt(`Escolha uma opção:
+            \n1 - À vista (dinheiro/cheque)
+            \n2 - À vista (cartão de crédito)
+            \n3 - Em 2x sem juros
+            \n4 - Em 2x com juros de 10%`);
+
+        let resultado = calcularValorFinal(valorCompra, opcaoPagamento);
+        document.write(resultado);
+   </script>
+</body>
+</html>
