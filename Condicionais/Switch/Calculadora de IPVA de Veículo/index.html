@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IPVA</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let valor = Number(prompt(`Digite o valor do veículo:`));
+        let modelo = prompt(`Digite o modelo:`);
+        let categoria = prompt(`Digite a categoria: \n1 - Passeio \n2 - Utilitário`);
+
+        let resultadoIPVA = calcularIPVA(valor, modelo, categoria);
+        document.write(resultadoIPVA);
+   </script>
+</body>
+</html>
