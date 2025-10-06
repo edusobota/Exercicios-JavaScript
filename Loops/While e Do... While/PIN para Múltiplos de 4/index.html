@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIN nos Múltiplos de 4</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let i = 1;
+        let resultado = "";
+
+        while (i <= 20) {
+            if (ehMultiploDeQuatro(i)) {
+                resultado += `pin`;
+            } else {
+                resultado += i;
+            }
+
+            if (i < 20) {
+                resultado += ` - `;
+            } else {
+                resultado += `.`;
+            }
+            i++;
+        }
+
+        document.write(resultado);
+    </script>
+</body>
+</html>
