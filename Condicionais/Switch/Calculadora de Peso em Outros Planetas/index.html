@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso nos Planetas</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let pesoTerra = Number(prompt(`Digite um peso na Terra (kg):`));
+        let planeta = prompt(`Escolha um planeta:
+            \n1 - Mercúrio
+            \n2 - Vênus
+            \n3 - Marte
+            \n4 - Júpiter
+            \n5 - Saturno
+            \n6 - Urano`);
+
+        let resultado = calcularPesoPlanetario(pesoTerra, planeta);
+        document.write(resultado);
+   </script>
+</body>
+</html>
