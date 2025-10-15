@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço de Venda</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let nome = prompt(`Digite o nome do produto`);
+        let valorCusto = Number(prompt(`Digite o valor de custo do produto`));
+        let precoFinal = calcularPrecoVenda(valorCusto);
+
+        document.write(`O produto ${nome} com custo de R$ ${valorCusto.toFixed(2)}<br>
+        terá seu preço de venda de R$ ${precoFinal.toFixed(2)}`);
+   </script>
+</body>
+</html>
