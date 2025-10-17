@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        let operador = prompt(`Digite a operação: \n + \n - \n * \n /`);
+        let num1 = Number(prompt(`Digite o primeiro valor`));
+        let num2 = Number(prompt(`Digite o segundo valor`));
+
+        let resultado = calcular(operador, num1, num2);
+
+        document.write(`${num1} ${operador} ${num2} = ${resultado}`);
+   </script>
+</body>
+</html>
