@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo de Adivinhação</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo de Adivinhação</h1>
+    <p>Escolha um número de 1 a 20</p>
+
+    <input type="number" id="numeroUsuario" placeholder="Digite um número">
+    <button onclick="verificarNumero()">Verificar</button>
+    <button onclick="reiniciar()">Jogar Novamente</button>
+
+    <p id="mensagemResultado">Aguardando...</p>
+    <p id="mensagemTentativas">Tentativas: 0</p>
+    <p id="mensagemCorreta">O valor certo era: ***</p>
+  </div>
+
+  <script src="functions.js"></script>
+</body>
+</html>

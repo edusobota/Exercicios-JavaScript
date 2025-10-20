@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo: Par ou Ímpar</title>
+  <script src="functions.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo: Par ou Ímpar</h1>
+
+    <input type="number" id="numeroUsuario" placeholder="Seu número">
+    <input type="number" id="limiteTentativas" placeholder="Melhor de quantas?">
+
+    <select id="escolhaUsuario">
+      <option value="par">Par</option>
+      <option value="impar">Ímpar</option>
+    </select>
+
+    <button onclick="jogar()">Jogar</button>
+    <button onclick="reiniciar()">Reiniciar</button>
+
+    <p id="mensagemResultado">Resultado aparecerá aqui...</p>
+    <p id="placarAtual"></p>
+    <p id="mensagemFinal"></p>
+  </div>
